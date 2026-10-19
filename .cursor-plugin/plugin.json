@@ -7,7 +7,7 @@
   "homepage": "https://optimistfi.com/mcp",
   "repository": "https://github.com/OptimistFi/optimistfi-mcp",
   "license": "MIT",
-  "logo": "assets/logo.svg",
+  "logo": "assets/logo.png",
   "keywords": ["perpetual-futures", "perps", "hyperliquid", "funding-rates", "liquidations", "crypto", "prop-firms", "stocks", "finance", "mcp"],
   "category": "finance",
   "mcpServers": {
