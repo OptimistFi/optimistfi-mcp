@@ -1,0 +1,15 @@
+name: listing-drift
+# Daily: the README tools table and server.json against the live server and the official MCP Registry.
+on:
+  schedule:
+    - cron: "17 13 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/scripts/check_listing.py

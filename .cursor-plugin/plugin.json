@@ -1,0 +1,16 @@
+{
+  "name": "optimistfi",
+  "displayName": "OptimistFi",
+  "version": "1.30.0",
+  "description": "Live perpetual futures data on 40 venues (funding, open interest, liquidation levels, whale trades, Hyperliquid's largest accounts), 21 perps prop firms' rules and prices, and sourced theses on 6,100+ US stocks. Public, read-only, no key.",
+  "author": { "name": "OptimistFi", "url": "https://optimistfi.com" },
+  "homepage": "https://optimistfi.com/mcp",
+  "repository": "https://github.com/OptimistFi/optimistfi-mcp",
+  "license": "MIT",
+  "logo": "https://optimistfi.com/assets/optimistfi-search-icon-512.png",
+  "keywords": ["perpetual-futures", "perps", "hyperliquid", "funding-rates", "liquidations", "crypto", "prop-firms", "stocks", "finance", "mcp"],
+  "category": "finance",
+  "mcpServers": {
+    "optimistfi": { "type": "streamable-http", "url": "https://mcp.optimistfi.com/mcp" }
+  }
+}
