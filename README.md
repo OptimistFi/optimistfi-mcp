@@ -1,6 +1,6 @@
 # OptimistFi MCP Server
 
-Market data and research for AI assistants: perpetual futures across 40 venues, the rules and pricing of 21 perps prop firms, and dated investment theses on more than 6,100 US equities.
+Market data and research for AI assistants: perpetual futures across 40 venues, the rules and pricing of 23 perps prop firms, and dated investment theses on more than 6,100 US equities.
 
 ```
 https://mcp.optimistfi.com/mcp
@@ -12,11 +12,25 @@ Remote server over Streamable HTTP. Read-only. No API key or account required.
 
 **Perpetual futures.** Forty venues, including Hyperliquid and its builder markets, Lighter, Aster, dYdX, Paradex, gTrade, Ostium, Vest, Orderly, Kraken Futures, OKX and Bitget: approximately 1,560 assets and 9,400 markets across crypto, equity, index, commodity and FX perpetuals. For each market: funding on every venue, open interest, maximum leverage, liquidation levels from live Hyperliquid positions, large trades, order-book depth and the net positioning of Hyperliquid's largest accounts, with up to 90 days of history. Market-wide: cross-venue funding spreads, movers, liquidations, new listings and multi-day position builds.
 
-**Perps prop firms.** Rules, account sizes and challenge pricing for 21 firms, sourced from each firm's published terms, with current discount codes and net pricing.
+**Perps prop firms.** Rules, account sizes and challenge pricing for 23 firms, sourced from each firm's published terms, with current discount codes and net pricing.
 
 **US equities.** A dated investment thesis for more than 6,100 companies, with testable claims, the condition that would invalidate each, and an assessment against the latest filings. Supported by SEC filings, insider and congressional transactions, capital returns and the earnings calendar.
 
 Every response is timestamped and attributed to its source.
+
+## The same data on optimistfi.com
+
+| Data | Page |
+|---|---|
+| Perpetual futures by market: funding, open interest, leverage and liquidations | [optimistfi.com/perps/markets](https://optimistfi.com/perps/markets) |
+| Perps news and large-account positioning | [optimistfi.com/perps/news](https://optimistfi.com/perps/news) |
+| Perps prop firms: rules, challenge prices and current codes | [optimistfi.com/perps/props](https://optimistfi.com/perps/props) |
+| Prop firm rule changes, dated and sourced (RSS available) | [optimistfi.com/perps/props/changes](https://optimistfi.com/perps/props/changes) |
+| Companies objecting to tokenized versions of their stock | [optimistfi.com/perps/tokenized-stocks](https://optimistfi.com/perps/tokenized-stocks) |
+| Investment theses on US stocks | [optimistfi.com/stocks](https://optimistfi.com/stocks) |
+| Insider buying, from SEC Form 4 | [optimistfi.com/insider-buying](https://optimistfi.com/insider-buying) |
+| House members' stock trades, from each periodic transaction report | [optimistfi.com/congress](https://optimistfi.com/congress) |
+| Research and studies | [optimistfi.com/research](https://optimistfi.com/research) |
 
 ## Connect
 
