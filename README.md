@@ -1,6 +1,6 @@
 # OptimistFi MCP Server
 
-Market data and research for AI assistants: perpetual futures across 40 venues, the rules and pricing of 23 perps prop firms, and dated investment theses on more than 6,100 US equities.
+The MCP server of OptimistFi, the only perps newsroom and equities research. Its desk covers perpetual futures, stock perps first, then index, commodity, FX and crypto perps; other outlets cover perps as one beat among many ([how that is counted](https://optimistfi.com/about)). Through MCP it serves the desk's stories and the data behind them, read directly from 40+ venues, the rules and pricing of perps and futures prop firms, and dated investment theses on more than 6,100 US equities.
 
 ```
 https://mcp.optimistfi.com/mcp
@@ -10,9 +10,11 @@ Remote server over Streamable HTTP. Read-only. No API key or account required.
 
 ## Coverage
 
-**Perpetual futures.** Forty venues, including Hyperliquid and its builder markets, Lighter, Aster, dYdX, Paradex, gTrade, Ostium, Vest, Orderly, Kraken Futures, OKX and Bitget: approximately 1,560 assets and 9,400 markets across crypto, equity, index, commodity and FX perpetuals. For each market: funding on every venue, open interest, maximum leverage, liquidation levels from live Hyperliquid positions, large trades, order-book depth and the net positioning of Hyperliquid's largest accounts, with up to 90 days of history. Market-wide: cross-venue funding spreads, movers, liquidations, new listings and multi-day position builds.
+**Perps news.** The desk's published stories, newest first, each with its public sources; the traders it covers, with the record of their calls; and the Hyperliquid wallets it has written about.
 
-**Perps prop firms.** Rules, account sizes and challenge pricing for 23 firms, sourced from each firm's published terms, with current discount codes and net pricing.
+**Perpetual futures.** 40+ venues, including Hyperliquid and its builder markets, Lighter, Aster, dYdX, Paradex, gTrade, Ostium, Vest, Orderly, Kraken Futures, OKX and Bitget, across equity, index, commodity, FX and crypto perpetuals. For each market: funding on every venue, open interest, maximum leverage, liquidation levels from live Hyperliquid positions, large trades, order-book depth and the net positioning of Hyperliquid's largest accounts, with up to 90 days of history. Market-wide: cross-venue funding spreads, movers, liquidations, new listings and multi-day position builds.
+
+**Prop firms.** Rules, account sizes and challenge pricing for perps and CME futures prop firms, sourced from each firm's published terms, with current discount codes and net pricing.
 
 **US equities.** A dated investment thesis for more than 6,100 companies, with testable claims, the condition that would invalidate each, and an assessment against the latest filings. Supported by SEC filings, insider and congressional transactions, capital returns and the earnings calendar.
 
@@ -22,8 +24,8 @@ Every response is timestamped and attributed to its source.
 
 | Data | Page |
 |---|---|
-| Perpetual futures by market: funding, open interest, leverage and liquidations | [optimistfi.com/perps/markets](https://optimistfi.com/perps/markets) |
 | Perps news and large-account positioning | [optimistfi.com/perps/news](https://optimistfi.com/perps/news) |
+| Perpetual futures by market: funding, open interest, leverage and liquidations | [optimistfi.com/perps/markets](https://optimistfi.com/perps/markets) |
 | Perps prop firms: rules, challenge prices and current codes | [optimistfi.com/perps/props](https://optimistfi.com/perps/props) |
 | Prop firm rule changes, dated and sourced (RSS available) | [optimistfi.com/perps/props/changes](https://optimistfi.com/perps/props/changes) |
 | Companies objecting to tokenized versions of their stock | [optimistfi.com/perps/tokenized-stocks](https://optimistfi.com/perps/tokenized-stocks) |
@@ -63,11 +65,11 @@ Setup guides for each client: [optimistfi.com/mcp/docs/clients](https://optimist
 <!-- tools:start -->
 | Tool | Title | Description |
 |---|---|---|
+| `get_perps_desk` | Perps newsroom — stories, traders and wallets | The newsroom's published perps stories with their sources, tracked traders and the record of their calls, and covered Hyperliquid wallets |
 | `get_perps` | Perpetual futures | A single market across venues: price and premium to the index or underlying equity, open interest, funding, maximum leverage, liquidation levels, large trades and positioning |
 | `get_perps_market` | Perpetual futures — whole market | The full market across approximately 1,600 assets: funding and cross-venue spreads, movers, open interest, liquidations, large trades, new listings, weekend pricing, large-account positioning, leverage and position builds |
 | `get_perps_history` | Perpetual futures — history | A single market over 1 to 90 days: price, open interest, funding, taker flow, large-account net positioning and order-book depth |
-| `get_perps_desk` | Perps desk — news, traders and wallets | Published perps coverage with sources, tracked traders and the record of their calls, and covered Hyperliquid wallets |
-| `get_prop_firms` | Prop firms for perpetual futures | Perps prop firm rules, challenge pricing net of current codes, discount codes, jurisdictions, platforms, assets and maximum allocation |
+| `get_prop_firms` | Prop firms: perps and CME futures | Rules, challenge pricing net of current codes, discount codes, payout rules, jurisdictions, platforms, assets and maximum allocation for perps and CME futures prop firms |
 | `answer` | Financial answer | A complete read on a stock: the investment case, valuation from filed financials, and the latest quarter |
 | `get_thesis` | Investment thesis | The investment case: testable claims, the condition that would invalidate each, the bear case, catalysts and current standing |
 | `get_thesis_impact` | Thesis impact of an event | A metric's recent quarters assessed against the investment case |
@@ -86,10 +88,11 @@ Parameters and response formats: [optimistfi.com/mcp/docs](https://optimistfi.co
 
 ## Example queries
 
+- What is the latest perps news on NVDA, and what is the NVDA perp's funding across venues?
+- How did the TSLA stock perp trade over the weekend while the stock market was closed?
+- Which venues list a gold perp, and where is its funding lowest?
 - Which venues offer BTC at 50x leverage, and where is liquidation?
-- How much BTC would be liquidated on a 5% decline, and where are the clusters?
 - How are Hyperliquid accounts above $1M positioned on BTC, ETH and HYPE?
-- Where is BTC funding lowest for a long position across venues?
 - Which perps prop firms offer a $50K challenge, and what is the net price after current codes?
 - Does the NVIDIA investment thesis hold after the latest 10-Q?
 
