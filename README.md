@@ -69,7 +69,7 @@ Setup guides for each client: [optimistfi.com/mcp/docs/clients](https://optimist
 | `get_perps` | Perpetual futures | A single market across venues: price and premium to the index or underlying equity, open interest, funding, maximum leverage, liquidation levels, large trades and positioning |
 | `get_perps_market` | Perpetual futures — whole market | The full market across approximately 1,600 assets: funding and cross-venue spreads, movers, open interest, liquidations, large trades, new listings, weekend pricing, large-account positioning, leverage and position builds |
 | `get_perps_history` | Perpetual futures — history | A single market over 1 to 90 days: price, open interest, funding, taker flow, large-account net positioning and order-book depth |
-| `get_prop_firms` | Prop firms: crypto perps and CME futures | Rules, challenge pricing net of current codes, discount codes, payout rules, jurisdictions, platforms, assets and maximum allocation for perps and CME futures prop firms |
+| `get_prop_firms` | Prop firms: perps and CME futures | Rules, challenge pricing net of current codes, discount codes, payout rules, jurisdictions, platforms, assets and maximum allocation for perps and CME futures prop firms |
 | `answer` | Financial answer | A complete read on a stock: the investment case, valuation from filed financials, and the latest quarter |
 | `get_thesis` | Investment thesis | The investment case: testable claims, the condition that would invalidate each, the bear case, catalysts and current standing |
 | `get_thesis_impact` | Thesis impact of an event | A metric's recent quarters assessed against the investment case |
