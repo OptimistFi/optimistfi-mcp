@@ -12,7 +12,7 @@ Remote server over Streamable HTTP. Read-only. No API key or account required.
 
 **Perps news.** The desk's published stories, newest first, each with its public sources; the traders it covers, with the record of their calls; and the Hyperliquid wallets it has written about.
 
-**Perpetual futures.** 40+ venues, including Hyperliquid and its builder markets, Lighter, Aster, dYdX, Paradex, gTrade, Ostium, Vest, Orderly, Kraken Futures, OKX and Bitget: approximately 1,560 assets and 9,400 markets across equity, index, commodity, FX and crypto perpetuals. For each market: funding on every venue, open interest, maximum leverage, liquidation levels from live Hyperliquid positions, large trades, order-book depth and the net positioning of Hyperliquid's largest accounts, with up to 90 days of history. Market-wide: cross-venue funding spreads, movers, liquidations, new listings and multi-day position builds.
+**Perpetual futures.** 40+ venues, including Hyperliquid and its builder markets, Lighter, Aster, dYdX, Paradex, gTrade, Ostium, Vest, Orderly, Kraken Futures, OKX and Bitget, across equity, index, commodity, FX and crypto perpetuals. For each market: funding on every venue, open interest, maximum leverage, liquidation levels from live Hyperliquid positions, large trades, order-book depth and the net positioning of Hyperliquid's largest accounts, with up to 90 days of history. Market-wide: cross-venue funding spreads, movers, liquidations, new listings and multi-day position builds.
 
 **Prop firms.** Rules, account sizes and challenge pricing for perps and CME futures prop firms, sourced from each firm's published terms, with current discount codes and net pricing.
 
